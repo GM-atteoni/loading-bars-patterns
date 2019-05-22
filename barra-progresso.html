@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='loading-bar.css'>
+    <script src='loading-bar.js'></script>
+    <script>
+        
+
+        function inputPorcentagem() {
+            var bar1 = new ldBar('#load1');
+            bar1.set(0);
+            var valr = document.getElementById('inputPorcentagem').value;
+            bar1.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemRedondo() {
+            var bar2 = new ldBar('#load2');
+            bar2.set(0);
+            var valr = document.getElementById('inputPorcentagemRedondo').value;
+            bar2.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemBolhas() {
+            var bar3 = new ldBar('#load3');
+            bar3.set(0);
+            var valr = document.getElementById('inputPorcentagemBolhas').value;
+            bar3.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemEstilo() {
+            var bar4 = new ldBar('#load4');
+            bar4.set(0);
+            var valr = document.getElementById('inputPorcentagemEstilo').value;
+            bar4.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemVerde() {
+            var bar5 = new ldBar('#load5');
+            bar5.set(0);
+            var valr = document.getElementById('inputPorcentagemVerde').value;
+            bar5.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemMaior() {
+            var bar6 = new ldBar('#load6');
+            bar6.set(0);
+            var valr = document.getElementById('inputPorcentagemMaior').value;
+            bar6.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemCustom() {
+            var bar7 = new ldBar('#load7');
+            bar7.set(0);
+            var valr = document.getElementById('inputPorcentagemCustom').value;
+            bar7.set(valr);
+            valr.value = "";
+        }
+
+        function inputPorcentagemBarril() {
+            var bar8 = new ldBar('#load8');
+            bar8.set(0);
+            var valr = document.getElementById('inputPorcentagemBarril').value;
+            bar8.set(valr);
+            valr.value = "";
+        }
+        
+    </script>
+</head>
+<body>
+
+    <h2>Barra normal</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagem"/>%</label>
+    <button onclick="inputPorcentagem();">Adicionar</button>
+    <div id="load1" class="ldBar" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Barra normal maior</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemMaior"/>%</label>
+    <button onclick="inputPorcentagemMaior();">Adicionar</button>
+    <div style="width:50%;height:50%;margin:auto" id="load6" class="ldBar" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Barra redonda</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemRedondo"/>%</label>
+    <button onclick="inputPorcentagemRedondo();">Adicionar</button>
+    <div id="load2" class="ldBar" data-preset="circle" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Bolhas</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemBolhas"/>%</label>
+    <button onclick="inputPorcentagemBolhas();">Adicionar</button>
+    <div id="load3" data-pattern-size ="90" class="ldBar" data-preset="bubble" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Estilo diferente</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemEstilo"/>%</label>
+    <button onclick="inputPorcentagemEstilo();">Adicionar</button>
+    <div id="load4" class="ldBar" data-preset="rainbow" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Verde</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemVerde"/>%</label>
+    <button onclick="inputPorcentagemVerde();">Adicionar</button>
+    <div id="load5" class="ldBar" data-preset="energy" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Custom</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemCustom"/>%</label>
+    <button onclick="inputPorcentagemCustom();">Adicionar</button>
+    <div id="load7" class="ldBar" data-type="fill" data-fill-background-extrude="5" data-fill-background="#9df" data-fill-dir="ltr" data-img="stage.svg" data-value=""></div>
+    <br/>
+    <br/>
+    <h2>Barril</h2>
+    <label>Insira aqui um valor de 0 a 100: <input type="text" id="inputPorcentagemBarril"/>%</label>
+    <button onclick="inputPorcentagemBarril();">Adicionar</button>
+    <div id="load8" class="ldBar" data-type="fill" data-path="M10 10L90 10L90 90L10 90Z" class="ldBar" data-fill="data:ldbar/res,bubble(#248,#fff,50,1)" data-value=""></div>
+    <br/>
+    <br/>    
+</body>
+</html>
